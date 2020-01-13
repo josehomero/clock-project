@@ -1,14 +1,7 @@
-
-
 function increment() {
-    var d = new Date();
-document.getElementById('demo').innerHTML = d.toDateString();
-var g = new Date()
-document.getElementById('tried').innerHTML = g.toLocaleTimeString();  
+    var date = new Date();
+    document.getElementById('date-text').innerHTML = date.toDateString();
+    document.getElementById('clock-text').innerHTML = date.toLocaleTimeString();  
 }
 setInterval(increment, 1000);
-
-
-
-
-
+increment();
